@@ -6,11 +6,12 @@ plugins {
 
 android {
     namespace = "lat.c14210223.room"
-    compileSdk = 34
+    compileSdk = 35
+
 
     defaultConfig {
-        applicationId = "lat.c14210223.room"
-        minSdk = 33
+        applicationId = "app.c14210290.room"
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -38,9 +39,6 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.room.ktx)
-    ksp(libs.androidx.room.compiler)
-    implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -49,4 +47,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.runtime)
 }

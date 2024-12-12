@@ -1,5 +1,5 @@
 [versions]
-agp = "8.5.2"
+agp = "8.5.1"
 kotlin = "2.1.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -12,9 +12,9 @@ constraintlayout = "2.2.0"
 vroom = "2.6.1"
 
 [libraries]
-android-room-ktx = {group = "androidx.room", name = "room-ktx", version.ref = "vroom"}
-android-room-compiler = {group =  "androidx.room", name = "room-compiler", version.ref = "vroom"}
-android-room-runtime = {group = "androidx.room", name = "room-runtime", version.ref = "vroom"}
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "vroom" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "vroom" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "vroom" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -23,6 +23,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
